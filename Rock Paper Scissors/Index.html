@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <p id="player-picked">Player Picked:</p>
+        <button id="rock" value="Rock" onclick="pilih(this)">🗿 Rock</button>
+        <button id="paper" value="Paper" onclick="pilih(this)">📄 Paper</button>
+        <button id="scissors" value="Scissors" onclick="pilih(this)">✂️ Scissors</button>
+        <button id="refresh">🔄</button>
+        <p id="komputer-picked">Computer Picked:</p>
+        <button id="comp-picked">Computer Picked</button>
+        <p id="result">Result:</p>
+        <p>Best Of 5 Series</p>
+        <section class="score">
+        <p id="player-score">Player Score: 0</p>
+        <p id="comp-score">Computer Score: 0</p>
+        </section>
+        <button class="mainlagi-button"id="playagain-button">Play Again</button>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
