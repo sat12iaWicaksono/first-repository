@@ -1,0 +1,191 @@
+:root {
+    --primary-bg: #0D1117;
+    --secondary-bg: #161B22;
+    --text-primary: #C9D1D9;
+    --text-secondary: #8B949E;
+    --button: #238636;
+    --button-hover: #2EA043;
+    --button-text: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg);
+}
+
+.name{
+    font-size: 3em;
+}
+
+.container {
+    background-color: var(--primary-bg);
+    color: var(--text-primary);
+    width: 100%;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+}
+
+.card {
+    background-color: var(--secondary-bg);
+    color: var(--text-primary);
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+}
+
+.title{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.description{
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.fa-brands {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+button {
+    border: none;
+    background-color: var(--button);
+    color: var(--button-text);
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    transition: backgorund-color 0.3s ease;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+@media screen and (min-width: 320px) and (max-width: 375px){
+    .name{
+        font-size: 1.5em;
+    }
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        width: 100px;
+        height: 25px;
+        font-size: 1em;
+        border-radius: 6px
+    }
+    
+    .card {
+        width: 200px;
+        height: 150px;
+    }
+
+    .title{
+    font-size: 1em;
+    margin-bottom: 10px;
+    }
+
+    .description{
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    }
+
+    .fa-brands {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px){
+    .name{
+        font-size: 2em;
+    }
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        width: 150px;
+        height: 40px;
+        font-size: 1em;
+        border-radius: 6px
+    }
+    
+    .card {
+        width: 250px;
+        height: 200px;
+    }
+
+    .title{
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    }
+
+    .description{
+    font-size: 1em;
+    margin-bottom: 15px;
+    }
+
+    .fa-brands {
+    font-size: 1em;
+    margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 480px){
+    .name{
+        font-size: 2.5em;
+    }
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    button{
+        width: 150px;
+        height: 30px;
+        font-size: 1em;
+        border-radius: 6px
+    }
+    
+    .card {
+        width: 270px;
+        height: 220px;
+    }
+
+    .title{
+    font-size: 1.7em;
+    margin-bottom: 17px;
+    }
+
+    .description{
+    font-size: 1.3em;
+    margin-bottom: 17px;
+    }
+
+    .fa-brands {
+    font-size: 1.1em;
+    margin-bottom: 17px;
+    }
+}
