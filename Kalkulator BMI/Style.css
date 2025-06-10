@@ -1,0 +1,129 @@
+:root {
+    /* Dark Theme */
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --button: #238636;
+    --button-hover: #2EA043;
+    --button-text: #ffffff;
+    --button-reset-hover-dark: #e5e7eb;
+    --button-reset-hover: var(--button-reset-hover-dark);
+
+    /* Light Theme */
+    --bg-primary-light: #f9fafb;
+    --bg-secondary-light: #ffffff;
+    --text-primary-light: #000000;
+    --text-secondary-light: #6b7280;
+    --button-reset-hover-light: #1a1a1a;
+}
+
+/* Aktifkan light theme saat class .ligth ada di body */
+body.ligth {
+    --bg-primary: var(--bg-primary-light);
+    --bg-secondary: var(--bg-secondary-light);
+    --text-primary: var(--text-primary-light);
+    --text-secondary: var(--text-secondary-light);
+    --button-reset-hover: var(--button-reset-hover-light);
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border-radius: 12px;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input {
+    border: none;
+    background-color: var(--text-primary);
+    width: 300px;
+    height: 45px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: var(--bg-primary);
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    padding-left: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input::placeholder {
+    color: var(--bg-primary);
+}
+
+#input-btn, #reset {
+    border: none;
+    padding: 12px 24px;
+    width: 150px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#input-btn {
+    background-color: var(--button);
+    color: var(--button-text);
+}
+
+#input-btn:hover {
+    background-color: var(--button-hover);
+}
+
+#reset {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+}
+
+#reset:hover {
+    background-color: var(--button-reset-hover);
+}
+
+
+#ligth {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    padding: 6px 12px;
+    width: 100px;
+    border-radius: 6px;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+#ligth:hover {
+    background-color: var(--button-reset-hover);
+}

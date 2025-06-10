@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="Style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="ligth">Light Mode</button>
+    <div class="container">
+        <h1>BMI CALCULATOR</h1>
+        <input id="berat-badan" type="text" placeholder="Berat Badan">
+        <input id="tinggi-badan" type="text" placeholder="Tinggi Badan">
+        <div class="input-reset">
+        <button id="input-btn" onclick="ambilData()">Input</button>
+        <button id="reset">Reset</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
